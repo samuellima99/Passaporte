@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Passaporte</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <h1>Passaporte</h1>
+    <form action="passaporte.php" method="POST">
+        <label>Nome</label></br>
+        <input type="text" id="nome" name="nome" minlength="10" placeholder="Nome" required></br>
+        <div id="msgNome"></div>
+
+        <label>Endereço</label></br>
+        <input type="text" id="end" name="end" placeholder="Endereço" required></br>
+        <div id="msgEnd"></div>
+
+        <label>Cidade</label></br>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required></br>
+        <div id="msgCidade"></div>
+
+        <label id="label_uf">UF</label></br>
+        <input type="text" id="uf" maxlength="2" name="uf" placeholder="UF" required></br>
+        <div id="msgUF"></div>
+
+        <label>Telefone</label></br>
+        <input type="text" id="tel" name="tel" placeholder="Telefone" required></br>
+        <div id="msgTel"></div>
+
+        <label>Celular</label></br>
+        <input type="text" id="cel" name="cel" placeholder="Celular" required></br>
+        <div id="msgCel"></div>
+
+        <label>Email</label></br>
+        <input type="text" id="email" name="email" placeholder="E-mail" required></br>
+        <div id="msgEmail"></div>
+
+        <label>Profissão</label></br>
+        <input type="text" id="prof" name="prof" placeholder="Profissão" required></br>
+        <div id="msgProf"></div>
+
+        <label>RG</label></br>
+        <input type="text" id="rg" name="rg" placeholder="RG" required></br>
+        <div id="msgRg"></div>
+
+        <label>CNH</label></br>
+        <input type="text" id="cnh" name="cnh" placeholder="CNH" required></br>
+        <div id="msgCnh"></div>
+
+        <label>CPF</label></br>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" required></br>
+        <div id="msgCpf"></div>
+
+        <label>Titulo de Eleitor</label></br>
+        <input type="text" id="titulo" name="titulo" placeholder="Titulo de Eleitor" required></br>
+        <div id="msgTitulo"></div>
+        <label>Tem passaporte antigo?</label></br></br>
+        <label> Sim </label><input type="radio" name="temPassaporte" id="sim"></br></br>
+        <label> Não </label><input type="radio" name="temPassaporte" id="nao"></br></br>
+
+        <div class="campoPassaporte">
+            <label>Número do Passaporte</label></br>
+            <input type="text" id="passaporte" name="passaporte" placeholder="Número do Passaporte" required></br>
+            <div id="msgPassaporte"></div>
+        </div>
+
+        <label>Motivo da solicitação</label></br>
+        <select id="select" name="option">
+            <option selected>Escolha um Motivo</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Turismo">Turismo</option>
+            <option value="Estudo">Estudo</option>
+            <option value="Sair do País">Sair do País</option>
+        </select></br>
+        <button type="submit" onclick="teste();" id="btn-enviar">Enviar</button>
+    </form>
+    <script src="js/vendor/maskJS.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

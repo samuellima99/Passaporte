@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40pt;
+    margin-top: 20px;
+}
+
+body{
+    background-color: #8700e9;
+}
+
+form{
+    background-color: #570096;
+    box-shadow: 1px 1px 8px 4px #000000;
+    border-radius: 30px;
+    padding-top: 15px;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 50px;
+    width: 650px;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #ffffff;
+    margin-left: 135px;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    margin-left: 130px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+#sim, #nao{
+    border-radius: 0;
+    border: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 0;
+    height: 0;
+}
+
+.campoPassaporte{
+    display: none;
+}
+
+#cidade{
+    width: 400px;
+}
+
+#uf{
+    width: 162px;
+}
+
+#select{
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    margin-left: 130px;
+}
+
+#btn-enviar{
+    border-radius: 20px;
+    border:none;
+    width: 400px;
+    height: 35px;
+    margin-left: 135px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 11pt;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#btn-enviar:hover{
+    border-radius: 20px;
+    border:none;
+    width: 400px;
+    height: 35px;
+    margin-left: 135px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 11pt;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#msgNome, #msgEnd, #msgCidade, #msgUF, #msgTel, #msgCel, #msgEmail, #msgProf, #msgRg, #msgCnh, #msgCpf, #msgTitulo, #msgPassaporte{
+    text-align: center;
+    color: #ff0000;
+    font-family: sans-serif;
+    font-weight: bold;
+}
